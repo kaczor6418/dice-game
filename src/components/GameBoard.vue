@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import DiceCard from '@/components/atomic/DiceCard.vue';
+import DiceCard from '@/components/atomic/DiceCard/DiceCard.vue';
 import BaseButton from '@/components/atomic/BaseButton.vue';
 import GameProgress from '@/components/GameProgress.vue';
 import { EventBus } from '@/EventBus';

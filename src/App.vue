@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <game-board />
+    <hr />
     <game-history />
   </div>
 </template>
@@ -30,4 +31,11 @@ export default class App extends Vue {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+hr {
+  margin: 2rem auto;
+  width: 90%;
+  border-color: var(--color-accent-1-inactive);
+  background-color: var(--color-accent-1-inactive);
+}
+</style>
