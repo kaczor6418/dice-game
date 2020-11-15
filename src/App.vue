@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <game-board />
+    <game-history />
   </div>
 </template>
 
@@ -12,9 +13,10 @@ import { DiceHistoryItem } from '@/store/DiceGameStore/interfaces/DiceHistoryIte
 import { EventBus } from '@/EventBus';
 import { Channels } from '@/common/Channels';
 import GameBoard from '@/components/GameBoard.vue';
+import GameHistory from '@/components/GameHistory.vue';
 
 @Component({
-  components: { GameBoard }
+  components: { GameHistory, GameBoard }
 })
 export default class App extends Vue {
   mounted(): void {
