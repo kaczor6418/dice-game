@@ -23,3 +23,26 @@ The task is to develop a simple game utilizing API http://roll.diceapi.com/ or h
 - Any tools, frameworks, librialiers or packages can be used to complete the task
 - Submit the project the way you do when working with a team
 - This repository is created exclusively for your recruitment process and you can interact with it the way you like 
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
