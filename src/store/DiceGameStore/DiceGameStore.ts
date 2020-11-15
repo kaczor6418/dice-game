@@ -102,7 +102,7 @@ export class DiceGameStore {
       });
     }
     this.currentScore = lastHistoryItem?.score;
-    this.currentRound = historyItems.length - 1 > 0 ? historyItems.length - 1 : 0;
+    this.currentRound = lastHistoryItem?.round;
     this.currentDice = lastHistoryItem?.dice;
     afterSuccess(lastHistoryItem);
     this.checkIsGameOver();
