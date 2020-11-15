@@ -2,11 +2,11 @@
   <div class="game-board">
     <section class="game-board__info">
       <game-progress />
-      <dice-card />
+      <dice-card image-source="https://cdn.pixabay.com/photo/2012/04/23/15/46/question-38629_960_720.png" />
     </section>
     <section class="game-board__guess">
       <base-button content="Less" @click="handleGuessIfLess" />
-      <dice-card />
+      <dice-card image-source="http://roll.diceapi.com/images/poorly-drawn/d6/6.png" />
       <base-button content="More" @click="handleGuessIfMore" />
     </section>
   </div>
