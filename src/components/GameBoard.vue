@@ -1,6 +1,5 @@
 <template>
   <div class="game-board">
-    <game-progress />
     <dice-card :image-source="nextDiceImg" class="game-board__next-dice" />
     <section class="game-board__guess">
       <base-button content="Less" @click="handleGuessIfLess" />

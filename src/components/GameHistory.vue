@@ -126,6 +126,22 @@ details {
     list-style: none;
     margin: 0;
     padding: 0.5rem;
+    overflow-y: auto;
+    max-height: calc(60vh - 10.55rem);
+
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 0.8rem rgba(0, 0, 0, 0.3);
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0.8rem;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-image: linear-gradient(0deg, var(--color-accent-1) 0%, var(--color-accent-2) 100%);
+    }
 
     li {
       padding: 0.5rem 1rem;

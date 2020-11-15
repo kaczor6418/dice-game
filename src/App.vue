@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <game-board />
+    <game-progress class="game-progress" />
+    <game-board class="game-board" />
     <hr />
-    <game-history />
+    <game-history class="game-history" />
   </div>
 </template>
 
@@ -15,9 +16,10 @@ import { EventBus } from '@/EventBus';
 import { Channels } from '@/common/Channels';
 import GameBoard from '@/components/GameBoard.vue';
 import GameHistory from '@/components/GameHistory.vue';
+import GameProgress from '@/components/GameProgress.vue';
 
 @Component({
-  components: { GameHistory, GameBoard }
+  components: { GameProgress, GameHistory, GameBoard }
 })
 export default class App extends Vue {
   mounted(): void {
@@ -31,11 +33,22 @@ export default class App extends Vue {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+.game-progress {
+  max-height: 10vh;
+}
+
+.game-board {
+  max-height: 50vh;
+}
 hr {
   margin: 2rem auto;
   width: 90%;
+  border-width: 0.05rem;
   border-color: var(--color-accent-1-inactive);
   background-color: var(--color-accent-1-inactive);
+}
+.game-history {
+  max-height: calc(60vh - 5.55rem);
 }
 </style>
