@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Dice game</h1>
+    <game-board />
   </div>
 </template>
 
@@ -11,8 +11,11 @@ import { diceStoreConfig } from '@/store/DiceGameStore/DiceGameStoreConfig';
 import { DiceHistoryItem } from '@/store/DiceGameStore/interfaces/DiceHistoryItem';
 import { EventBus } from '@/EventBus';
 import { Channels } from '@/common/Channels';
+import GameBoard from '@/components/GameBoard.vue';
 
-@Component({})
+@Component({
+  components: { GameBoard }
+})
 export default class App extends Vue {
   mounted(): void {
     diceStore.initializeStore(diceStoreConfig, this.setUpGameData);
