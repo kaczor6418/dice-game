@@ -5,9 +5,9 @@
       <dice-card />
     </section>
     <section class="game-board__guess">
-      <base-button />
+      <base-button content="Less" @click="handleGuessIfLess" />
       <dice-card />
-      <base-button />
+      <base-button content="More" @click="handleGuessIfMore" />
     </section>
   </div>
 </template>
@@ -21,7 +21,15 @@ import BaseButton from '@/components/atomic/BaseButton.vue';
 @Component({
   components: { BaseButton, DiceCard, GameProgress }
 })
-export default class GameBoard extends Vue {}
+export default class GameBoard extends Vue {
+  public async handleGuessIfLess(): Promise<void> {
+    console.info('Less');
+  }
+
+  public async handleGuessIfMore(): Promise<void> {
+    console.info('More');
+  }
+}
 </script>
 
 <style lang="scss"></style>
