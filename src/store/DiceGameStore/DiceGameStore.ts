@@ -4,6 +4,8 @@ import { UTILS } from '@/common/UTILS';
 import { httpService } from '@/services/services';
 import { CONSTANTS } from '@/common/CONSTANTS';
 import { NewDiceHistoryItem } from '@/store/DiceGameStore/interfaces/NewDiceHistoryItem';
+import { EventBus } from '@/EventBus';
+import { Channels } from '@/common/Channels';
 import { DiceGameGuess } from '@/common/Enums';
 
 export class DiceGameStore {
@@ -42,6 +44,7 @@ export class DiceGameStore {
       guess: newHistoryItem.guess
     };
     objectStore.add(historyItem);
+    EventBus.$emit(Channels.DICE_GAME_STATE, historyItem);
     this.checkIsGameOver();
   }
 
@@ -80,11 +83,9 @@ export class DiceGameStore {
 
   private setUp = async (historyItems: DiceHistoryItem[], afterSuccess: (diceHistoryItem: DiceHistoryItem) => void): Promise<void> => {
     let lastHistoryItem: DiceHistoryItem | null = UTILS.getLastArrayItem(historyItems);
-    if (!UTILS.isNullOrUndefined(lastHistoryItem)) {
-      if (!window.confirm('Load last game ?')) {
-        this.clearDiceHistoryStore();
-        lastHistoryItem = null;
-      }
+    if (!UTILS.isNullOrUndefined(lastHistoryItem) && !window.confirm('Load last game ?')) {
+      this.clearDiceHistoryStore();
+      lastHistoryItem = null;
     }
     if (UTILS.isNullOrUndefined(lastHistoryItem)) {
       const { resource } = await httpService.get(CONSTANTS.ROLL_SINGLE_DICE);
@@ -114,8 +115,8 @@ export class DiceGameStore {
   }
 
   private checkIsGameOver(): void {
-    if (this.currentRound === 30) {
-      console.log('Game Over!');
+    if (this.currentRound === 3) {
+      EventBus.$emit(Channels.GAME_OVER);
     }
   }
 }
