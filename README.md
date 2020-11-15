@@ -1,3 +1,8 @@
+# Summary
+ - I finished this task in around **`5 - 6`**h
+ - **`1.5 - 2.00`** hours was only enough to plan what I want to do
+ - On Saturday I decided that I want to play some with `Vue 3` + `Vuex` + `TypeScript` and I get very interested how to integrate `Typescript` with `Vuex`. I try to figure out how can I achieve this without such big overhead and fully typed `Vuex` store but I couldn't. If you want to see what I've achieved, so far check it out: [Generic type for typing vuex store](https://stackoverflow.com/questions/64836903/generic-type-for-typing-vuex-store)
+
 # Recruitment assignment
 ----
 
