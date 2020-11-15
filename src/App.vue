@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <game-over />
     <game-progress class="game-progress" />
     <game-board class="game-board" />
     <hr />
@@ -17,9 +18,10 @@ import { Channels } from '@/common/Channels';
 import GameBoard from '@/components/GameBoard.vue';
 import GameHistory from '@/components/GameHistory.vue';
 import GameProgress from '@/components/GameProgress.vue';
+import GameOver from '@/components/GameOver.vue';
 
 @Component({
-  components: { GameProgress, GameHistory, GameBoard }
+  components: { GameOver, GameProgress, GameHistory, GameBoard }
 })
 export default class App extends Vue {
   mounted(): void {
