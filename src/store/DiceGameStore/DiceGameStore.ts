@@ -115,7 +115,7 @@ export class DiceGameStore {
   }
 
   private checkIsGameOver(): void {
-    if (this.currentRound === 3) {
+    if (this.currentRound === 30) {
       EventBus.$emit(Channels.GAME_OVER);
     }
   }
