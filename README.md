@@ -18,10 +18,8 @@
 ## Built with:
 
 <p align="center">
-  &nbsp; &nbsp; <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://www.vectorlogo.
-zone/logos/javascript/javascript-icon.svg" alt="javascript"/></a> &nbsp; &nbsp;
-  &nbsp; &nbsp; <a href="https://www.typescriptlang.org/"><img src="https://www.vectorlogo.
-zone/logos/typescriptlang/typescriptlang-icon.svg" 
+  &nbsp; &nbsp; <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="javascript"/></a> &nbsp; &nbsp;
+  &nbsp; &nbsp; <a href="https://www.typescriptlang.org/"><img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" 
 alt="typescript"/></a> &nbsp; &nbsp; 
   &nbsp; &nbsp; <a href="https://vuejs.org/"><img src="https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg" 
 alt="vue"/></a> &nbsp; &nbsp;
