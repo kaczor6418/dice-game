@@ -1,3 +1,5 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/144f837118c547f2b9697dc30fe74917)](https://www.codacy.com/gh/kaczor6418/dice-game/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kaczor6418/dice-game&amp;utm_campaign=Badge_Grade)
+
 # Dice Game
 
 > Guess next dice score
