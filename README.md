@@ -17,12 +17,15 @@
 
 ## Built with:
 
-<div style="display: flex; justify-content: space-around; align-items: center;">
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img style="width: 4rem" src="https://cdn.worldvectorlogo.com/logos/javascript.svg" alt="javascript"/></a>
-  <a href="https://www.typescriptlang.org/"><img style="width: 4rem" src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" 
-alt="typescript"/></a>
-  <a href="https://vuejs.org/"><img style="width: 4rem" src="https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg" alt="vue"/></a>
-</div>
+<p align="center">
+  &nbsp; &nbsp; <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://www.vectorlogo.
+zone/logos/javascript/javascript-icon.svg" alt="javascript"/></a> &nbsp; &nbsp;
+  &nbsp; &nbsp; <a href="https://www.typescriptlang.org/"><img src="https://www.vectorlogo.
+zone/logos/typescriptlang/typescriptlang-icon.svg" 
+alt="typescript"/></a> &nbsp; &nbsp; 
+  &nbsp; &nbsp; <a href="https://vuejs.org/"><img src="https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg" 
+alt="vue"/></a> &nbsp; &nbsp;
+</p>
 
 >I also used ***[DiceApi](http://roll.diceapi.com/)*** to roll dice
 
