@@ -22,7 +22,7 @@ import { UTILS } from '@/common/UTILS';
 import DiceCard from '@/components/atomic/DiceCard/DiceCard.vue';
 import { CONSTANTS } from '@/common/CONSTANTS';
 import { diceStore } from '@/store/store';
-import { DiceCardSize } from '@/components/atomic/DiceCard/DiceCardSize';
+import { DiceCardSize } from '@/components/atomic/DiceCard/interfaces/DiceCardSize';
 
 @Component({
   components: { DiceCard }
@@ -44,7 +44,7 @@ export default class GameHistory extends Vue {
     if (!this.hasMoreThanOneItem()) {
       return [];
     }
-    return this.historyItems.filter(diceItem => this.isNotLastHistoryItem(diceItem));
+    return this.historyItems.filter((diceItem) => this.isNotLastHistoryItem(diceItem));
   }
 
   private hasMoreThanOneItem(): boolean {

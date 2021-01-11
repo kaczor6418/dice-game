@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import { DiceCardSize } from '@/components/atomic/DiceCard/DiceCardSize';
+import { DiceCardSize } from '@/components/atomic/DiceCard/interfaces/DiceCardSize';
 
 @Component
 export default class DiceCard extends Vue {

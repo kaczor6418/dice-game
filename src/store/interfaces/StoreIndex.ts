@@ -1,4 +1,4 @@
 export interface StoreIndex {
-    key: string;
-    isUnique: boolean;
+  key: string;
+  isUnique: boolean;
 }

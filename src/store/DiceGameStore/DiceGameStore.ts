@@ -66,7 +66,7 @@ export class DiceGameStore {
   ): void {
     this.storeName = storeName;
     const databaseRequest = indexedDB.open(this.name, 2);
-    databaseRequest.onerror = e => console.error(`An error occurred in **${this.name}** database`, (<any>e.target).errorCode);
+    databaseRequest.onerror = (e) => console.error(`An error occurred in **${this.name}** database`, (<any>e.target).errorCode);
     databaseRequest.onsuccess = () => {
       this.database = databaseRequest.result;
       const gameHistoryRequest = this.getDiceGameHistory();
@@ -110,7 +110,7 @@ export class DiceGameStore {
 
   private createDiceTransaction(): IDBObjectStore {
     const transaction = this.database.transaction([this.storeName], 'readwrite');
-    transaction.onerror = e => console.error(`An error occurred in **transaction**`, (<any>e.target).errorCode);
+    transaction.onerror = (e) => console.error(`An error occurred in **transaction**`, (<any>e.target).errorCode);
     return transaction.objectStore(this.storeName);
   }
 

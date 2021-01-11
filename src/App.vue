@@ -15,10 +15,10 @@ import { diceStoreConfig } from '@/store/DiceGameStore/DiceGameStoreConfig';
 import { DiceHistoryItem } from '@/store/DiceGameStore/interfaces/DiceHistoryItem';
 import { EventBus } from '@/EventBus';
 import { Channels } from '@/common/Channels';
-import GameBoard from '@/components/GameBoard.vue';
-import GameHistory from '@/components/GameHistory.vue';
-import GameProgress from '@/components/GameProgress.vue';
-import GameOver from '@/components/GameOver.vue';
+import GameBoard from '@/components/GameBoard/GameBoard.vue';
+import GameHistory from '@/components/GameHistory/GameHistory.vue';
+import GameProgress from '@/components/GameProgress/GameProgress.vue';
+import GameOver from '@/components/GameOver/GameOver.vue';
 
 @Component({
   components: { GameOver, GameProgress, GameHistory, GameBoard }

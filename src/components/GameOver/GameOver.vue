@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import BaseButton from '@/components/atomic/BaseButton.vue';
+import BaseButton from '@/components/atomic/BaseButton/BaseButton.vue';
 import { diceStore } from '@/store/store';
 import { httpService, splashService } from '@/services/services';
 import { CONSTANTS } from '@/common/CONSTANTS';
